@@ -1,0 +1,107 @@
+/* General Styling */
+.main {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.delete-btn:active {
+  filter: brightness(30%);
+}
+
+.files_input-main {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.submit-button {
+  height: 2rem;
+  width: 2rem;
+  z-index: 1;
+}
+
+.data-main {
+  margin-left: 12px;
+  font-size: 1rem;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 976px) {
+  .main {
+    height: 70vh;
+  }
+  .delete-btn {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main {
+    height: 70vh;
+  }
+  .delete-btn {
+    width: auto;
+    font-size: 0.8rem;
+  }
+  .files_input-main {
+    font-size: 0.8rem;
+  }
+  .data-main {
+    font-size: 0.8rem;
+  }
+  .submit-button {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main {
+    height: 75vhl;
+  }
+  .delete-btn {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .delete-btn {
+    width: auto;
+  }
+  .heading {
+    font-size: 1rem;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  .app-name {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+}
+
+/* Larger Screen Styling */
+@media only screen and (min-width: 768px) {
+  .delete-btn {
+    width: auto;
+    font-size: 1rem;
+  }
+  .files_input-main {
+    margin-left: 8rem;
+  }
+  .submit-button {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .files_input-main {
+    margin-left: 12rem;
+  }
+  .submit-button {
+    width: 3rem;
+    height: 3rem;
+  }
+}
